@@ -1,0 +1,116 @@
+.modal-dialog {
+    max-width: 450px;
+    font-size: 20px;
+}
+.modal-content {
+    border: none;
+}
+.modal-header {
+    position: relative;
+    background: #424242;
+    border-radius: .3rem;
+    color: #ffffff;
+    justify-content: center;
+}
+.modal-header::after {
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 90%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-top: solid 10px #424242;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+}
+
+.modal-body {
+    border: 1px solid #dcdcdc;
+    padding: 0px;
+    box-shadow: 0px 3px #dcdcdc;
+}
+.modal-body .body-progress {
+    border: 1px solid #dcdcdc;  
+    height: 20px;
+}
+.progress-passed {
+    width: 70%;
+    background: #F15E33;
+    height: 100%;
+    display: flex;
+}
+
+.body-content {
+    color: #828282;
+}
+.content-header span {
+    color: #F15E33;
+}
+.content-text {
+    
+}
+.content-input-button {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    font-size: 1.7rem;
+}
+.content-input-button .input-wrapper,
+.content-input-button .content-button {
+    width: 45%;
+    display: flex;
+}
+
+.content-input-button input {
+    border-radius: .3rem;
+    border: 1px solid #dcdcdc;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0;
+    display: flex;
+    width: 100%;
+}
+.prepend-text {
+    display: flex;
+    align-items: center;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    color: #b8b8b8;
+    text-align: center;
+    background-color: #ffffff;
+    height: 100%;
+    border: 1px solid #dcdcdc;
+    border-radius: .3rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+    /* font-size: 1.5rem; */
+}
+.content-button button{
+    width: 100%;
+    height: 100%;
+    font-size: inherit;
+    font-weight: 700;
+}
+.content-footer {
+    display: flex;
+    color: #24A7D9;
+}
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: initial;
+    font-family: inherit;
+    border: none;
+}
+.modal-footer button {
+    height: 4rem; 
+    width: 45%;
+    background: #FAFAFA;
+    border-color: #dcdcdc;
+    border-bottom: 2px solid #dcdcdc;
+    color: #828282;
+    font-size: inherit;
+    font-weight: 700;
+}
